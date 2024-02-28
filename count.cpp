@@ -1,3 +1,4 @@
+
 int count(int array[], int n){
     int num = n;
     int sum = 0;
