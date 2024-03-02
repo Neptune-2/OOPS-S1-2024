@@ -1,9 +1,9 @@
 #include <iostream>
 
 void two_five_nine(int array[], int n){
-    int twos;
-    int fives;
-    int nines;
+    int twos=0;
+    int fives=0;
+    int nines=0;
 
     for(int i=0; i<n; i++){
         if(array[i]==2){
