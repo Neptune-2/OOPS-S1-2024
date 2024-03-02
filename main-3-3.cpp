@@ -4,7 +4,7 @@
 
 int main() {
     int myArray[] = {3, 5, 2, 8, 4, 6, 7};
-    int sum = weighted_average(myArray, 7);
+    double sum = weighted_average(myArray, 7);
 
     std::cout << sum;
 

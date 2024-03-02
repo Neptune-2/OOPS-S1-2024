@@ -33,6 +33,6 @@ double weighted_average(int array[], int n){
         }
     }
 
-    int sum = (1*ones)/n + (2*twos)/n + (3*threes)/n + (4*fours)/n + (5*fives)/n + (6*sixes)/n +(7*sevens)/n + (8*eights)/n + (9*nines)/n;
+    double sum = (1*ones)/n + (2*twos)/n + (3*threes)/n + (4*fours)/n + (5*fives)/n + (6*sixes)/n +(7*sevens)/n + (8*eights)/n + (9*nines)/n;
     return sum;
 }
