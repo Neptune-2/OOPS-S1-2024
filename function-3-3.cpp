@@ -17,8 +17,8 @@ double weighted_average(int array[], int n) {
     for (const auto& entry : elementCounts) {
         int xi = entry.first;
         int count = entry.second;
-        sum += static_cast<double>(xi * count) / n;
+        sum += static_cast<double>(xi * count);
     }
 
-    return sum;
+    return sum / n;
 }
