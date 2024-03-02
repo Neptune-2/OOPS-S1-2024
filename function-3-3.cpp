@@ -1,41 +1,42 @@
 #include <iostream>
-#include <unordered_map>
 
-double weighted_average(int array[], int n) {
-    // Check if the size is less than 1
-    if (n < 1) {
+double weighted_average(int array[], int n){
+    if(n<1){
         return 0.0;
     }
 
-    // Count occurrences of each distinct element using an unordered_map
-    std::unordered_map<int, int> elementCounts;
-    for (int i = 0; i < n; i++) {
-        elementCounts[array[i]]++;
+    int ones=0;
+    int twos=0;
+    int threes=0;
+    int fours=0;
+    int fives=0;
+    int sixes=0;
+    int sevens=0;
+    int eights=0;
+    int nines=0;
+
+    for(int i=0; i<n; i++){
+        if(array[i]==2){
+            twos++;
+        } else if(array[i]==5){
+            fives++;
+        } else if(array[i]==9){
+            nines++;
+        } else if (array[i]==1){
+            ones++;
+        } else if (array[i]==3){
+            threes++;
+        } else if (array[i]==4){
+            fours++;
+        } else if (array[i]==6){
+            sixes++;
+        } else if (array[i]==7){
+            sevens++;
+        } else if (array[i]==8){
+            eights++;
+        }
     }
 
-    // Calculate the weighted sum
-    double weightedSum = 0.0;
-    for (const auto& entry : elementCounts) {
-        int xi = entry.first;
-        int count = entry.second;
-        weightedSum += static_cast<double>(xi * count) / n;
-    }
-
-    return weightedSum;
-}
-
-int main() {
-    // Example usage
-    const int size = 6;
-    int myArray[size] = {1, 2, 1, 4, 1, 3};
-
-    double result = weighted_average(myArray, size);
-
-    if (result != 0.0) {
-        std::cout << "Weighted Average: " << result << std::endl;
-    } else {
-        std::cout << "Invalid size for calculating the weighted average." << std::endl;
-    }
-
-    return 0;
+    double sum = (1*ones)/n + (2*twos)/n + (3*threes)/n + (4*fours)/n + (5*fives)/n + (6*sixes)/n +(7*sevens)/n + (8*eights)/n + (9*nines)/n;
+    return sum/n;
 }
