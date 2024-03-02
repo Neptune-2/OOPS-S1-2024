@@ -1,5 +1,5 @@
-#ifndef FUNCTION23_H
-#define FUNCTION23_H
+#ifndef FUNCTION24_H
+#define FUNCTION24_H
 
 bool is_ascending(int array[], int n);
 
