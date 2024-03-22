@@ -4,7 +4,7 @@
 #include <iostream>
 
 PersonList createPersonList(int n){
-    Person* array = createPersonArray(n);
+    Person* array = createPersonArray1(n);
     PersonList finalArray;
     for(int i=0;i<n;i++){
         finalArray.numPeople= n;
