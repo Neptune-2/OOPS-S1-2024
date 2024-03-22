@@ -1,8 +1,6 @@
 #include "Person.h"
-#include "function-1-1.cpp"
 #include <stdio.h>
 #include <iostream>
-#include "function-1-2.cpp"
 
 PersonList deepCopyPersonList(const PersonList& originalList) {
     PersonList copiedList;
