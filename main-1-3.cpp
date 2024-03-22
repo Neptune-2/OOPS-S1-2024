@@ -3,7 +3,8 @@
 #include <iostream>
 
 int main(void){
-    PersonList array = createPersonList(2);
+    PersonList array;
+    array = createPersonList(2);
     PersonList array2;
     array2 = deepCopyPersonList(array);
 }
