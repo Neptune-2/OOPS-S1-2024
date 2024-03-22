@@ -16,5 +16,6 @@ struct PersonList {
 Person* createPersonArray(int n);
 PersonList createPersonList(int n);
 Person* createPersonArray1(int n);
+PersonList deepCopyPersonList(PersonList pl);
 
 #endif
