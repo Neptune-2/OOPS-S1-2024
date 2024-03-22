@@ -18,6 +18,6 @@ PersonList createPersonList(int n);
 Person* createPersonArray1(int n);
 PersonList deepCopyPersonList(PersonList pl);
 PersonList createPersonList(int n);
-
+PersonList shallowCopyPersonList(PersonList pl);
 
 #endif
