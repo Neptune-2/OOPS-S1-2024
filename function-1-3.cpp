@@ -2,13 +2,13 @@
 #include <stdio.h>
 #include <iostream>
 
-PersonList deepCopyPersonList(const PersonList& originalList) {
-    PersonList copiedList;
-    int n = originalList.numPeople;
-    copiedList.people = new Person[n];
-    for (int i = 0; i < n; ++i) {
-        copiedList.people[i] = originalList.people[i];
+PersonList deepCopyPersonList(PersonList pl) {
+    PersonList newPl;
+    newPl.numPeople = pl.numPeople;
+    newPl.people = new Person[newPl.numPeople];
+    for (int i = 0; i < newPl.numPeople; ++i) {
+        newPl.people[i].name = pl.people[i].name;
+        newPl.people[i].age = pl.people[i].age;
     }
-    copiedList.numPeople = n;
-    return copiedList;
+    return newPl;
 }
