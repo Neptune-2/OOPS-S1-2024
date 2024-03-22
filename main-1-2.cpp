@@ -4,5 +4,4 @@
 
 int main(void){
     PersonList array = createPersonList(2);
-    std::cout << array;
 }
