@@ -13,4 +13,7 @@ struct PersonList {
     int numPeople;
 };
 
+Person* createPersonArray(int n);
+Person* createPersonArray1(int n);
+
 #endif
