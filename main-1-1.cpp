@@ -4,6 +4,6 @@
 #include <iostream>
 
 int main(void){
-    Person* array;
-    array = createPersonArray(2);
+    Person* array = createPersonArray(2);
+    std::cout << array;
 }
