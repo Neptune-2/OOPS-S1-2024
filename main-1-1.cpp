@@ -1,5 +1,5 @@
-#include "function-1-1.cpp"
 #include <stdio.h>
+#include "Person.h"
 #include <iostream>
 
 int main(void){
