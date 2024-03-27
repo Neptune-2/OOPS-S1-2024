@@ -1,9 +1,16 @@
+#include <iostream>
+#include <stdio.h>
 #include "Musician.h"
 
-Musician::Musician() ...
-
-Musician::Musician(std::string instrument, int experience) ...
-
-std::string Musician::get_instrument()...
-
-int Musician::get_experience() ...
+class Musician{
+    private:
+        std::string instrument;
+        int exp;
+    public:
+    Musician(std::string s_instrument, int s_exp){
+        exp=s_exp;
+        instrument=s_instrument;
+    }
+    std::string get_instrument(){return instrument;}
+    int get_exp(){return exp;}
+};
